@@ -27,6 +27,9 @@ export let h5ts_modals = () => {
     for(const modal of modals){
         modal.onclick = hideModalByClickModalShadow
         if(ciInClasses(modal.id, 'hidden')){
+            document.body.style.overflow = 'auto'
+        }
+        else{
             document.body.style.overflow = 'hidden'
         }
     }
