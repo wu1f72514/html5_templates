@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="img/h5ts.png">
         <title>H5TS - The simple and flat template</title>
         <meta name="description" content="Ceci est la description de la page importante pour le résultat des recherches">
         <link rel="stylesheet" href="css/style.css">
@@ -63,6 +64,7 @@
 
             <h1>Actions buttons</h1>
             <button type="button" class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
+            <button type="button" class="close"><i class="fa-solid fa-xmark"></i> Close</button>
             <button type="button" class="update"><i class="fa-solid fa-pencil"></i> Update</button>
             <button type="button" class="ok"><i class="fa-solid fa-check"></i> OK</button>
             <button type="button" class="see"><i class="fa-solid fa-eye"></i> See</button>
@@ -74,7 +76,19 @@
             Soon&hellip;
 
             <h1>Modals</h1>
-            Soon&hellip;
+            <button type="button" id="btnClassicModal" data-modal_id="modal_example1">Classic modal</button>
+            <div class="modal" id="modal_example1">
+                <div>
+                    <header>My modal</header>
+                    <i class="fa-solid fa-xmark fa-2x closeBt" title="Close"></i>
+                    <section>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span class="focus">occaecat</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </section>
+                    <footer>
+                        <button type="button" class="close" data-modal_id="modal_example1"><i class="fa-solid fa-xmark"></i> Close</button>
+                    </footer>
+                </div>
+            </div>
 
             <h1>Tabs</h1>
             Soon&hellip;
@@ -101,6 +115,7 @@
             </ul>
             <p class="copyright">&copy; 2022 by Fabien Wissocq</p>
         </footer>
+        <script type="module" src="js/h5ts.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
