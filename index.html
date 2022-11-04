@@ -21,6 +21,8 @@
             </nav>
         </header>
         <main>
+            <a id="go_intro"></a>
+            <h1>Introduction</h1>
             <section class="intro">
                 <strong>H5TS</strong> is free and lightweight HTML5 template !<br />
                 It was born using boring framework who crashes flies with tanks and many others stuffs who transforms the web in a great lake of shit [troll].<br />
@@ -28,6 +30,67 @@
                 To use it, we must keep in mind that an octet is an octet and that HTML5 and modern javascript helps you to make a great website without boring user-stories.<br />
                 A framework will always be deprecated faster than a native code&hellip;<br />
             </section>
+            <h5>Code:</h5>
+            <blockquote><section class="intro">
+                <strong>H5TS</strong> is free and lightweight HTML5 template !<br />
+                It was born using boring framework who crashes flies with tanks and many others stuffs who transforms the web in a great lake of shit [troll].<br />
+                It was designed to be very fast without too many dependances<sup><a href="#note1">1</a></sup>.<br />
+                To use it, we must keep in mind that an octet is an octet and that HTML5 and modern javascript helps you to make a great website without boring user-stories.<br />
+                A framework will always be deprecated faster than a native code&hellip;<br />
+            </section>
+            </blockquote>
+
+            <a id="go_page_structure"></a>
+            <h1>Page structure</h1>
+            <h2>Code:</h2>
+            <blockquote><!doctype html>
+                &lt;html lang="fr">
+                    &lt;head>
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width">
+                        <link rel="icon" type="image/png" href="img/h5ts.png">
+                        <title>H5TS - The simple and flat template</title>
+                        <meta name="description" content="Ceci est la description de la page importante pour le résultat des recherches">
+                        <link rel="stylesheet" href="css/style.css">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,500;0,900;1,200&family=Noto+Sans:wght@200;300;400&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+                    &lt;/head>
+                    &lt;body>
+                        <header>
+                            <div class="logo">H5TS</div>
+                            <nav>
+                                <a href="#" id="dsp_index">Accueil</a>
+                            </nav>
+                        </header>
+                        <main>
+                            Main content
+                        </main>
+                        <aside class="fixed">
+                            <nav>
+                                <a href="#go_intro" class="cat1">Introduction</a>
+                                <a href="#go_titles" class="cat1">Titles</a>
+                                <a href="#go_texts" class="cat1">Texts</a>
+                                <a href="#go_classic_text" class="cat2">Classic text</a>
+                                <a href="#go_focused_text" class="cat2">Focused text</a>
+                                <a href="#go_paragraph" class="cat2">Paragraph</a>
+                                <a href="#go_alerts" class="cat1">Alerts</a>
+                            </nav>
+                        </aside>
+                        <footer>
+                            <ul class="notes">
+                                <li><a id="note1"></a><sup>1</sup> Only font-awesome and google fonts are loaded from CDNs servers</li>
+                            </ul>
+                            <p class="copyright">&copy; 2022 by Fabien Wissocq</p>
+                        </footer>
+                        <script type="module" src="js/h5ts.js"></script>
+                        <script type="module" src="js/index.js"></script>
+                    &lt;/body>
+                &lt;/html></blockquote>
+
+            <a id="go_titles"></a>
             <h1>Titles</h1>
             <h1>h1 title</h1>
             <h2>h2 title</h2>
@@ -35,33 +98,105 @@
             <h4>h4 title</h4>
             <h5>h5 title</h5>
 
+            <h5>Code:</h5>
+            <blockquote><h1>h1 title</h1>
+                <h2>h2 title</h2>
+                <h3>h3 title</h3>
+                <h4>h4 title</h4>
+                <h5>h5 title</h5>
+            </blockquote>
+
+            <a id="go_texts"></a>
             <h1>Texts</h1>
+            <a id="go_classic_text"></a>
+            <h2>Classic text</h2>
             Classic text
 
+            <h5>Code:</h5>
+            <blockquote>Classic text</blockquote>
+
+            <a id="go_focused_text"></a>
+            <h2>Focused text</h2>
+            <span class="focus">Focused text</span>
+
+            <h5>Code:</h5>
+            <blockquote><span class="focus">Focused text</span></blockquote>
+
+            <a id="go_paragraph"></a>
+            <h2>Paragraph</h2>
             <p>Paragraph text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span class="focus">occaecat</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <h1>Alerts</h1>
-            <div class="msg error"><i class="fa-solid fa-circle-exclamation"></i> This is an error !</div>
-            <div class="msg warning"><i class="fa-solid fa-triangle-exclamation"></i> This is a warning !</div>
-            <div class="msg info"><i class="fa-solid fa-circle-info"></i> This is an information !</div>
-            <div class="msg success"><i class="fa-solid fa-check"></i> This is a success !</div>
+            <h5>Code:</h5>
+            <blockquote><p>Paragraph text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span class="focus">occaecat</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></blockquote>
 
+            <a id="go_alerts"></a>
+            <h1>Alerts</h1>
+
+            <a id="go_error"></a>
+            <h2>Error</h2>
+            <div class="msg error"><i class="fa-solid fa-circle-exclamation"></i> This is an error !</div>
+            <h5>Code:</h5>
+            <blockquote><div class="msg error"><i class="fa-solid fa-circle-exclamation"></i> This is an error !</div></blockquote>
+
+            <a id="go_warning"></a>
+            <h2>Warning</h2>
+            <div class="msg warning"><i class="fa-solid fa-triangle-exclamation"></i> This is a warning !</div>
+            <h5>Code:</h5>
+            <blockquote><div class="msg warning"><i class="fa-solid fa-triangle-exclamation"></i> This is a warning !</div></blockquote>
+
+            <a id="go_info"></a>
+            <h2>Info</h2>
+            <div class="msg info"><i class="fa-solid fa-circle-info"></i> This is an information !</div>
+            <h5>Code:</h5>
+            <blockquote><div class="msg info"><i class="fa-solid fa-circle-info"></i> This is an information !</div></blockquote>
+
+            <a id="go_success"></a>
+            <h2>Success</h2>
+            <div class="msg success"><i class="fa-solid fa-check"></i> This is a success !</div>
+            <h5>Code:</h5>
+            <blockquote><div class="msg success"><i class="fa-solid fa-check"></i> This is a success !</div></blockquote>
+
+            <a id="go_badges"></a>
             <h1>Badges</h1>
             <p>This a text with a default badge <span class="badge">Awesome badge</span></p>
+            <h5>Code:</h5>
+            <blockquote><span class="badge">Awesome badge</span></blockquote>
+
             <p>This a text some customized badges :
                 <span class="badge error">Error badge</span>
                 <span class="badge warning">Warning badge</span>
                 <span class="badge info">Info badge</span>
                 <span class="badge success">Success badge</span>
             </p>
+            <h5>Code:</h5>
+            <blockquote><span class="badge error">Error badge</span>
+                <span class="badge warning">Warning badge</span>
+                <span class="badge info">Info badge</span>
+                <span class="badge success">Success badge</span></blockquote>
 
+            <a id="go_buttons"></a>
             <h1>Buttons</h1>
             <button type="button">Classic button</button>
-            <button type="button" class="red">Red button</button>
-            <button type="button" class="orange">Orange button</button>
-            <button type="button" class="green">Green button</button>
-            <button type="button" class="blue">Blue button</button>
+            <h5>Code:</h5>
+            <blockquote><button type="button">Classic button</button></blockquote><br />
 
+            <button type="button" class="red">Red button</button>
+            <h5>Code:</h5>
+            <blockquote><button type="button" class="red">Red button</button></blockquote><br />
+
+            <button type="button" class="orange">Orange button</button>
+            <h5>Code:</h5>
+            <blockquote><button type="button" class="orange">Orange button</button></blockquote><br />
+
+            <button type="button" class="green">Green button</button>
+            <h5>Code:</h5>
+            <blockquote><button type="button" class="green">Green button</button></blockquote><br />
+
+            <button type="button" class="blue">Blue button</button>
+            <h5>Code:</h5>
+            <blockquote><button type="button" class="blue">Blue button</button></blockquote><br />
+
+            <a id="go_action_buttons"></a>
             <h1>Actions buttons</h1>
             <button type="button" class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
             <button type="button" class="close"><i class="fa-solid fa-xmark"></i> Close</button>
@@ -69,13 +204,30 @@
             <button type="button" class="ok"><i class="fa-solid fa-check"></i> OK</button>
             <button type="button" class="see"><i class="fa-solid fa-eye"></i> See</button>
 
+            <h5>Code:</h5>
+            <blockquote><button type="button" class="delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                <button type="button" class="close"><i class="fa-solid fa-xmark"></i> Close</button>
+                <button type="button" class="update"><i class="fa-solid fa-pencil"></i> Update</button>
+                <button type="button" class="ok"><i class="fa-solid fa-check"></i> OK</button>
+                <button type="button" class="see"><i class="fa-solid fa-eye"></i> See</button></blockquote><br />
+
+            <a id="go_cards"></a>
             <h1>Cards</h1>
             Soon&hellip;
+            <h5>Code:</h5>
+            <blockquote></blockquote>
 
+            <a id="go_carousel"></a>
             <h1>Carousel</h1>
             Soon&hellip;
+            <h5>Code:</h5>
+            <blockquote></blockquote>
 
+            <a id="go_modals"></a>
             <h1>Modals</h1>
+
+            <a id="go_classic_modal"></a>
+            <h2>Classic modal</h2>
             <button type="button" id="btnClassicModal" data-modal_id="modal_example1">Classic modal</button>
             <div class="modal hidden" id="modal_example1">
                 <div>
@@ -89,25 +241,95 @@
                     </footer>
                 </div>
             </div>
+            <h5>Code:</h5>
+            <blockquote><button type="button" id="btnClassicModal" data-modal_id="modal_example1">Classic modal</button>
+            <div class="modal hidden" id="modal_example1">
+                <div>
+                    <header>My modal</header>
+                    <i class="fa-solid fa-xmark fa-2x closeBt" title="Close"></i>
+                    <section>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span class="focus">occaecat</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </section>
+                    <footer>
+                        <button type="button" class="close" data-modal_id="modal_example1"><i class="fa-solid fa-xmark"></i> Close</button>
+                    </footer>
+                </div>
+            </div></blockquote>
 
+            <a id="go_tabs"></a>
             <h1>Tabs</h1>
             Soon&hellip;
+            <h5>Code:</h5>
+            <blockquote></blockquote>
 
+            <a id="go_accordion"></a>
             <h1>Accordion</h1>
             Soon&hellip;
+            <h5>Code:</h5>
+            <blockquote></blockquote>
 
+            <a id="go_breadcrumb"></a>
             <h1>Breadcrumb</h1>
-            Soon&hellip;
+            <ul class="breadcrumb">
+                <li><a href="#">Index</a></li>
+                <li><a href="#">My awesome page</a></li>
+                <li class="current">Current page</li>
+            </ul>
+            <h5>Code:</h5>
+            <blockquote><ul class="breadcrumb">
+                <li><a href="#">Index</a></li>
+                <li><a href="#">My awesome page</a></li>
+                <li class="current">Current page</li>
+            </ul></blockquote>
 
+            <a id="go_toasts"></a>
             <h1>Toasts</h1>
             Soon&hellip;
+            <h5>Code:</h5>
+            <blockquote></blockquote>
 
+            <a id="go_images"></a>
             <h1>Images</h1>
-            Soon&hellip;
+
+            <figure>
+                <img src="https://picsum.photos/300" alt="My Photo" />
+                <figcaption>Just an image</figcaption>
+            </figure>
+            <h5>Code:</h5>
+            <blockquote><figure>
+                <img src="https://picsum.photos/300" alt="My Photo" />
+                <figcaption>Just an image</figcaption>
+            </figure></blockquote>
 
         </main>
-        <aside>
-            sssdsd
+        <aside class="fixed">
+            <a href="https://github.com/wu1f72514/html5_templates" target="_blank" class="button right"><i class="fa-brands fa-github"></i> See on GitHub</a>
+            <nav>
+                <a href="#go_intro" class="cat1">Introduction</a>
+                <a href="#go_page_structure" class="cat1">Page structure</a>
+                <a href="#go_titles" class="cat1">Titles</a>
+                <a href="#go_texts" class="cat1">Texts</a>
+                <a href="#go_classic_text" class="cat2">Classic text</a>
+                <a href="#go_focused_text" class="cat2">Focused text</a>
+                <a href="#go_paragraph" class="cat2">Paragraph</a>
+                <a href="#go_alerts" class="cat1">Alerts</a>
+                <a href="#go_error" class="cat2">Error</a>
+                <a href="#go_warning" class="cat2">Warning</a>
+                <a href="#go_info" class="cat2">Info</a>
+                <a href="#go_success" class="cat2">Success</a>
+                <a href="#go_badges" class="cat1">Badges</a>
+                <a href="#go_buttons" class="cat1">Buttons</a>
+                <a href="#go_action_buttons" class="cat1">Actions buttons</a>
+                <a href="#go_cards" class="cat1">Cards <small><i>Soon&hellip;</i></small></a>
+                <a href="#go_carousel" class="cat1">Carousel <small><i>Soon&hellip;</i></small></a>
+                <a href="#go_modals" class="cat1">Modals</a>
+                <a href="#go_classic_modal" class="cat2">Classic modal</a>
+                <a href="#go_tabs" class="cat1">Tabs <small><i>Soon&hellip;</i></small></a>
+                <a href="#go_accordion" class="cat1">Accordion <small><i>Soon&hellip;</i></small></a>
+                <a href="#go_breadcrumb" class="cat1">Breadcrumb</a>
+                <a href="#go_toasts" class="cat1">Toasts <small><i>Soon&hellip;</i></small></a>
+                <a href="#go_images" class="cat1">Images</a>
+            </nav>
         </aside>
         <footer>
             <ul class="notes">
@@ -116,6 +338,6 @@
             <p class="copyright">&copy; 2022 by Fabien Wissocq</p>
         </footer>
         <script type="module" src="js/h5ts.js"></script>
-        <script src="js/index.js"></script>
+        <script type="module" src="js/index.js"></script>
     </body>
 </html>
