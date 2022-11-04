@@ -4,6 +4,22 @@ body{
     vertical-align: top;
     font-size: 14px;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+blockquote{
+    display: inline-block !important;
+    border: 1px solid grey;
+    background-color: rgb(224, 226, 228);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    font-family: 'Noto Sans', sans-serif;
+}
 body>header{
     border-bottom: 1px solid grey;
     margin-bottom: 1em;
@@ -77,7 +93,24 @@ main p::first-letter{
 aside{
     width: 19%;
     border-left: 1px solid #cccccc;
+    background-color: rgb(242, 247, 245);
+    padding: 1em;
     padding-left: 0.5%;
+}
+aside.fixed{
+    position: fixed;
+    overflow: auto;
+    max-height: 300px;
+}
+aside nav>a{
+    display: block;
+}
+aside nav>a.cat1{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+aside nav>a.cat2{
+    margin-left: 1em;
 }
 .focus{
     font-size: 1.3em;
@@ -91,19 +124,19 @@ div.msg{
     display: block;
     margin: .5em;
 }
-div.error, .badge.error, button.red, button.delete, button.close{
+div.error, .badge.error, button.red, .button.red, button.delete, .button.delete, button.close, .button.close{
     background-color: rgb(239, 45, 86);
     color: white;
 }
-div.warning, .badge.warning, button.orange, button.update{
+div.warning, .badge.warning, button.orange, .button.orange, button.update, .button.update{
     background-color: rgb(255, 127, 17);
     color: white;
 }
-div.info, .badge.info, button.blue, button.see{
+div.info, .badge.info, button.blue, .button.blue, button.see, .button.see{
     background-color: rgb(34, 144, 191);
     color: white;
 }
-div.success, .badge.success, button.green, button.ok{
+div.success, .badge.success, button.green, .button.green, button.ok, .button.ok{
     background-color: rgb(6, 167, 125);
     color: white;
 }
@@ -118,16 +151,17 @@ div.success, .badge.success, button.green, button.ok{
     font-size: 0.8em;
     font-weight: bold;
 }
-button{
+button, .button{
     padding: 0.7em;
     border-radius: 5px 5px 5px 5px;
     border: 1px solid grey;
     box-shadow: 2px 2px 3px rgb(207, 206, 206);
     cursor: pointer;
 }
-button:hover{
+button:hover, .button:hover{
     box-shadow: 2px 2px 3px rgb(96, 95, 95);
     border: 2px solid rgb(165, 166, 167);
+    text-decoration: none;
 }
 .intro{
     border: 1px solid grey;
@@ -177,7 +211,27 @@ sup>a{
     text-align: center;
     display: block;
 }
+figure{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid rgb(165, 166, 167);
+}
+figure>img, figure>figcaption{
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.breadcrumb{
 
+}
+.breadcrumb li:not(.current)::after{
+    content: ' > ';
+}
+.right{
+    margin-left: auto;
+    margin-right: 0px;
+}
 
 
 
